@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#FFD9DE"/>
+  </radialGradient>
+  <linearGradient id="brassH" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#9A6212"/><stop offset=".3" stop-color="#F7D774"/>
+    <stop offset=".55" stop-color="#E2A92F"/><stop offset="1" stop-color="#7A4A0C"/>
+  </linearGradient>
+  <linearGradient id="brassV" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#FBE59A"/><stop offset=".5" stop-color="#E2A92F"/><stop offset="1" stop-color="#8C5A12"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" x2="1">
+    <stop offset="0" stop-color="#7A2E12"/><stop offset=".35" stop-color="#E8956A"/>
+    <stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#5E220C"/>
+  </linearGradient>
+  <linearGradient id="marble" x1="0" x2="1">
+    <stop offset="0" stop-color="#D9D3CC"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BDB5AC"/>
+  </linearGradient>
+  <radialGradient id="flame" cx="50%" cy="75%" r="65%">
+    <stop offset="0" stop-color="#FFFDF0"/><stop offset=".3" stop-color="#FFE066"/>
+    <stop offset=".7" stop-color="#FF9A1F"/><stop offset="1" stop-color="#FF5E00"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#FFC233" stop-opacity=".75"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="kumkum" cx="45%" cy="30%" r="80%">
+    <stop offset="0" stop-color="#FF4D5E"/><stop offset=".6" stop-color="#D3102A"/><stop offset="1" stop-color="#8E0618"/>
+  </radialGradient>
+  <radialGradient id="bead" cx="35%" cy="30%" r="75%">
+    <stop offset="0" stop-color="#C98A55"/><stop offset=".55" stop-color="#7A3F17"/><stop offset="1" stop-color="#3E1A06"/>
+  </radialGradient>
+  <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#7CC6F2"/><stop offset="1" stop-color="#1F78C1"/>
+  </linearGradient>
+</defs>
+<style>
+  .flk { transform-box: fill-box; transform-origin: 50% 100%; animation: flk 1.8s ease-in-out infinite; }
+  .smk { animation: smk 4s ease-in-out infinite; }
+  .smk2 { animation: smk 4s ease-in-out -2s infinite; }
+  @keyframes flk { 0%,100% { transform: scale(1,1) rotate(-2deg); } 30% { transform: scale(.92,1.08) rotate(2deg); } 60% { transform: scale(1.04,.95) rotate(-1deg); } }
+  @keyframes smk { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
+  @media (prefers-reduced-motion: reduce) { .flk, .smk, .smk2 { animation: none; } }
+</style>
+
+<rect width="400" height="400" fill="url(#bg)"/>
+<circle cx="200" cy="200" r="150" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="2"/>
+<circle cx="200" cy="200" r="172" fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="2 7"/>
+<path transform="translate(62 70) scale(1.1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(338 92) scale(0.8)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(344 318) scale(1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(56 300) scale(0.7)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.4"/>
+<ellipse cx="200" cy="330" rx="120" ry="14" fill="#3A1A08" opacity=".12"/>
+
+  <circle cx="200" cy="164.5" r="105.4" fill="url(#glow)"/>
+  <path d="M115.0 280 L115.0 155.0 A85.0 85.0 0 0 1 285.0 155.0 L285.0 280"
+        fill="none" stroke="url(#brassH)" stroke-width="12" stroke-linecap="round"/>
+  <path d="M129.0 280 L129.0 155.0 A71.0 71.0 0 0 1 271.0 155.0 L271.0 280"
+        fill="#FFF4E6" stroke="#8C5A12" stroke-width="1" stroke-opacity=".4"/>
+  <circle cx="295.0" cy="155.0" r="5" fill="#F5C74E"/><circle cx="287.8" cy="118.6" r="5" fill="#F5C74E"/><circle cx="267.2" cy="87.8" r="5" fill="#F5C74E"/><circle cx="236.4" cy="67.2" r="5" fill="#F5C74E"/><circle cx="200.0" cy="60.0" r="5" fill="#F5C74E"/><circle cx="163.6" cy="67.2" r="5" fill="#F5C74E"/><circle cx="132.8" cy="87.8" r="5" fill="#F5C74E"/><circle cx="112.2" cy="118.6" r="5" fill="#F5C74E"/><circle cx="105.0" cy="155.0" r="5" fill="#F5C74E"/>
+  <path d="M200 120 C222 120 230 140 226 156 C246 166 252 196 246 230 L154 230 C148 196 154 166 174 156 C170 140 178 120 200 120Z"
+        fill="none" stroke="#C2643A" stroke-width="3" stroke-dasharray="7 7" stroke-linecap="round"/>
+  <text x="200" y="262" text-anchor="middle" font-family="'Noto Sans Devanagari','Kohinoor Devanagari','Nirmala UI','Mangal',sans-serif" font-size="22" font-weight="700" fill="#8C5A12">आपकी पसंद</text>
+
+  <path d="M105.0 280 L295.0 280 L285.0 306 L115.0 306Z" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.5"/>
+  <rect x="99.0" y="306" width="202" height="14" rx="3" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.5"/>
+  <path d="M115.0 280 Q127.1 254 139.3 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M139.3 280 Q151.4 254 163.6 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M163.6 280 Q175.7 254 187.9 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M187.9 280 Q200.0 254 212.1 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M212.1 280 Q224.3 254 236.4 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M236.4 280 Q248.6 254 260.7 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/><path d="M260.7 280 Q272.9 254 285.0 280" fill="url(#brassV)" stroke="#8C5A12" stroke-width="1.2"/>
+</svg>

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDF3E4"/>
+  </radialGradient>
+  <linearGradient id="brassH" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#9A6212"/><stop offset=".3" stop-color="#F7D774"/>
+    <stop offset=".55" stop-color="#E2A92F"/><stop offset="1" stop-color="#7A4A0C"/>
+  </linearGradient>
+  <linearGradient id="brassV" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#FBE59A"/><stop offset=".5" stop-color="#E2A92F"/><stop offset="1" stop-color="#8C5A12"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" x2="1">
+    <stop offset="0" stop-color="#7A2E12"/><stop offset=".35" stop-color="#E8956A"/>
+    <stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#5E220C"/>
+  </linearGradient>
+  <linearGradient id="marble" x1="0" x2="1">
+    <stop offset="0" stop-color="#D9D3CC"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BDB5AC"/>
+  </linearGradient>
+  <radialGradient id="flame" cx="50%" cy="75%" r="65%">
+    <stop offset="0" stop-color="#FFFDF0"/><stop offset=".3" stop-color="#FFE066"/>
+    <stop offset=".7" stop-color="#FF9A1F"/><stop offset="1" stop-color="#FF5E00"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#FFC233" stop-opacity=".75"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="kumkum" cx="45%" cy="30%" r="80%">
+    <stop offset="0" stop-color="#FF4D5E"/><stop offset=".6" stop-color="#D3102A"/><stop offset="1" stop-color="#8E0618"/>
+  </radialGradient>
+  <radialGradient id="bead" cx="35%" cy="30%" r="75%">
+    <stop offset="0" stop-color="#C98A55"/><stop offset=".55" stop-color="#7A3F17"/><stop offset="1" stop-color="#3E1A06"/>
+  </radialGradient>
+  <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#7CC6F2"/><stop offset="1" stop-color="#1F78C1"/>
+  </linearGradient>
+</defs>
+<style>
+  .flk { transform-box: fill-box; transform-origin: 50% 100%; animation: flk 1.8s ease-in-out infinite; }
+  .smk { animation: smk 4s ease-in-out infinite; }
+  .smk2 { animation: smk 4s ease-in-out -2s infinite; }
+  @keyframes flk { 0%,100% { transform: scale(1,1) rotate(-2deg); } 30% { transform: scale(.92,1.08) rotate(2deg); } 60% { transform: scale(1.04,.95) rotate(-1deg); } }
+  @keyframes smk { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
+  @media (prefers-reduced-motion: reduce) { .flk, .smk, .smk2 { animation: none; } }
+</style>
+
+<rect width="400" height="400" fill="url(#bg)"/>
+<circle cx="200" cy="200" r="150" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="2"/>
+<circle cx="200" cy="200" r="172" fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="2 7"/>
+<path transform="translate(62 70) scale(1.1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(338 92) scale(0.8)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(344 318) scale(1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(56 300) scale(0.7)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.4"/>
+<ellipse cx="200" cy="330" rx="120" ry="14" fill="#3A1A08" opacity=".12"/>
+
+  <path d="M192 64 Q200 40 208 64Z" fill="url(#brassH)"/>
+  <circle cx="200" cy="70" r="11" fill="url(#brassH)"/>
+  <rect x="192" y="78" width="16" height="44" rx="4" fill="url(#brassH)"/>
+  <ellipse cx="200" cy="96" rx="13" ry="5" fill="url(#brassH)" stroke="#8C5A12" stroke-width="1"/>
+  <ellipse cx="200" cy="124" rx="18" ry="6" fill="url(#brassH)" stroke="#8C5A12" stroke-width="1"/>
+  <path d="M166 160 Q166 128 200 128 Q234 128 234 160 L240 250 Q244 286 274 296 L126 296 Q156 286 160 250Z" fill="url(#brassH)"/>
+  <path d="M166 162 Q200 172 234 162 M162 228 Q200 240 238 228" fill="none" stroke="#8C5A12" stroke-width="2" opacity=".6"/>
+  <path d="M178 150 Q178 140 186 136 L182 250 Q178 270 170 282" fill="none" stroke="#FFF6CF" stroke-width="5" stroke-linecap="round" opacity=".6"/>
+  <ellipse cx="200" cy="296" rx="74" ry="12" fill="#B77A1C" stroke="#7A4A0C" stroke-width="2"/>
+  <ellipse cx="200" cy="294" rx="64" ry="7" fill="#5E3A08"/>
+  <line x1="200" y1="292" x2="200" y2="306" stroke="#7A4A0C" stroke-width="3"/>
+  <circle cx="200" cy="310" r="9" fill="url(#brassH)"/>
+</svg>

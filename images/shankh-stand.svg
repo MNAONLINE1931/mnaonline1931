@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+
+<defs>
+  <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+    <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DDF3E4"/>
+  </radialGradient>
+  <linearGradient id="brassH" x1="0" x2="1" y1="0" y2="0">
+    <stop offset="0" stop-color="#9A6212"/><stop offset=".3" stop-color="#F7D774"/>
+    <stop offset=".55" stop-color="#E2A92F"/><stop offset="1" stop-color="#7A4A0C"/>
+  </linearGradient>
+  <linearGradient id="brassV" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#FBE59A"/><stop offset=".5" stop-color="#E2A92F"/><stop offset="1" stop-color="#8C5A12"/>
+  </linearGradient>
+  <linearGradient id="copper" x1="0" x2="1">
+    <stop offset="0" stop-color="#7A2E12"/><stop offset=".35" stop-color="#E8956A"/>
+    <stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#5E220C"/>
+  </linearGradient>
+  <linearGradient id="marble" x1="0" x2="1">
+    <stop offset="0" stop-color="#D9D3CC"/><stop offset=".35" stop-color="#FFFFFF"/><stop offset="1" stop-color="#BDB5AC"/>
+  </linearGradient>
+  <radialGradient id="flame" cx="50%" cy="75%" r="65%">
+    <stop offset="0" stop-color="#FFFDF0"/><stop offset=".3" stop-color="#FFE066"/>
+    <stop offset=".7" stop-color="#FF9A1F"/><stop offset="1" stop-color="#FF5E00"/>
+  </radialGradient>
+  <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#FFC233" stop-opacity=".75"/><stop offset="1" stop-color="#FFB000" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="kumkum" cx="45%" cy="30%" r="80%">
+    <stop offset="0" stop-color="#FF4D5E"/><stop offset=".6" stop-color="#D3102A"/><stop offset="1" stop-color="#8E0618"/>
+  </radialGradient>
+  <radialGradient id="bead" cx="35%" cy="30%" r="75%">
+    <stop offset="0" stop-color="#C98A55"/><stop offset=".55" stop-color="#7A3F17"/><stop offset="1" stop-color="#3E1A06"/>
+  </radialGradient>
+  <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+    <stop offset="0" stop-color="#7CC6F2"/><stop offset="1" stop-color="#1F78C1"/>
+  </linearGradient>
+</defs>
+<style>
+  .flk { transform-box: fill-box; transform-origin: 50% 100%; animation: flk 1.8s ease-in-out infinite; }
+  .smk { animation: smk 4s ease-in-out infinite; }
+  .smk2 { animation: smk 4s ease-in-out -2s infinite; }
+  @keyframes flk { 0%,100% { transform: scale(1,1) rotate(-2deg); } 30% { transform: scale(.92,1.08) rotate(2deg); } 60% { transform: scale(1.04,.95) rotate(-1deg); } }
+  @keyframes smk { 0% { opacity: 0; transform: translateY(6px); } 30% { opacity: .7; } 100% { opacity: 0; transform: translateY(-14px); } }
+  @media (prefers-reduced-motion: reduce) { .flk, .smk, .smk2 { animation: none; } }
+</style>
+
+<rect width="400" height="400" fill="url(#bg)"/>
+<circle cx="200" cy="200" r="150" fill="none" stroke="#FFFFFF" stroke-opacity=".7" stroke-width="2"/>
+<circle cx="200" cy="200" r="172" fill="none" stroke="#FFFFFF" stroke-opacity=".45" stroke-width="1.5" stroke-dasharray="2 7"/>
+<path transform="translate(62 70) scale(1.1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(338 92) scale(0.8)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(344 318) scale(1)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.55"/><path transform="translate(56 300) scale(0.7)" d="M0 -10 Q1.5 -1.5 10 0 Q1.5 1.5 0 10 Q-1.5 1.5 -10 0 Q-1.5 -1.5 0 -10Z" fill="#F2A900" opacity="0.4"/>
+<ellipse cx="200" cy="330" rx="120" ry="14" fill="#3A1A08" opacity=".12"/>
+
+  <path d="M146 270 Q200 296 254 270 L266 306 Q200 326 134 306Z" fill="url(#brassH)" stroke="#8C5A12" stroke-width="1.5"/>
+  <path d="M150 300 Q200 316 250 300" fill="none" stroke="#FFF2B3" stroke-width="2" opacity=".6"/>
+  <path d="M86 196 C112 162 178 138 246 148 C304 156 328 196 310 230 C296 256 252 266 198 260 C146 254 108 230 86 196Z" fill="#FBF6EE" stroke="#D6C7B2" stroke-width="2"/>
+  <path d="M86 196 C104 186 112 178 120 166 C112 186 112 200 118 214 C106 210 96 204 86 196Z" fill="#E9DFD0"/>
+  <path d="M120 168 C132 194 132 222 124 238 M150 154 C166 190 166 226 156 250 M182 146 C200 186 198 228 188 258 M216 146 C236 186 234 228 222 260"
+        fill="none" stroke="#D6C7B2" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M214 252 C254 262 292 252 310 230 C296 244 262 252 222 246Z" fill="#F4B6A6"/>
+  <path d="M232 170 C262 168 292 184 300 206" fill="none" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+</svg>
